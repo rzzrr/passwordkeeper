@@ -1,5 +1,7 @@
 package com.example.authnotes;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -11,6 +13,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class NotePageActivity extends AppCompatActivity {
+
+    public static Intent newIntent(Context context) {
+        Intent intent = new Intent(context, NotePageActivity.class);
+        return  intent;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

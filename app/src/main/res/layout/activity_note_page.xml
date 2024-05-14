@@ -11,9 +11,9 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/loginTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.appcompat.widget.Toolbar>
@@ -26,9 +26,9 @@
         android:text="@string/login"
 
         android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/loginTextEdit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/loginTextEdit"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <EditText
@@ -37,10 +37,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/loginTextView"
+        app:layout_constraintBottom_toTopOf="@id/passwordTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/passwordTextView" />
+        app:layout_constraintTop_toBottomOf="@id/loginTextView" />
 
     <TextView
         android:id="@+id/passwordTextView"
@@ -61,22 +61,22 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/resourceTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/resourceTextView"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextView"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
+
     <TextView
         android:id="@+id/resourceTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordTextEdit"
-        app:layout_constraintBottom_toTopOf="@+id/resourceTextEdit"
         android:layout_margin="8dp"
+        android:text="@string/resource"
         android:textSize="32sp"
-        android:text="@string/resource" />
+        app:layout_constraintBottom_toTopOf="@+id/resourceTextEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextEdit" />
 
     <EditText
         android:id="@+id/resourceTextEdit"
@@ -84,10 +84,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/resourceTextView"
+        app:layout_constraintBottom_toTopOf="@id/aboutTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/aboutTextView" />
+        app:layout_constraintTop_toBottomOf="@id/resourceTextView" />
 
     <TextView
         android:id="@+id/aboutTextView"
@@ -108,12 +108,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutTextView"
-        />
-
+        app:layout_constraintTop_toBottomOf="@+id/aboutTextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

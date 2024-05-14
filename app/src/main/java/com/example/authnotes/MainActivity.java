@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, NotePageActivity.class));
+                startActivity(NotePageActivity.newIntent(MainActivity.this));
             }
         });
     }
