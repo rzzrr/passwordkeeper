@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(NotePageActivity.newIntent(MainActivity.this));
             }
+
+            //adasdasd
+            //may commit
         });
     }
 
